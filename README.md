@@ -8,32 +8,24 @@ The timing constraints for this design are specified in MUX_4_1.sdc
 
 Verilog code:
 
-module MUX_4_1(
-    input clk,
-    input s0,
-    input s1,   
-    input  a,           
-    input  b,           
-    input  c,           
-    input  d,           
-    output y           
-);   
-    wire y0, y1;
-    MUX2 M1(.I0(a),.I1(b),.S(s1),.Z(y0));
-    MUX2 M2(.I0(c),.I1(d),.S(s1),.Z(y1));
-    MUX2 M3(.I0(y0),.I1(y1),.S(s0),.Z(y));   
-endmodule
+![image](https://github.com/user-attachments/assets/4e76403f-8a01-4be5-9941-e2cbe89b31d5)
+
 
 test.tcl    :
 
 ![image](https://github.com/user-attachments/assets/c68fcf42-a183-428b-9cbc-8e798475a981)
 
 
-Slack in Timing Analysis
-Slack: Slack is the difference between the required arrival time and the actual arrival time of a signal at a particular point in a digital circuit.
-Positive Slack: Indicates that the signal arrives earlier than required, meaning the design meets or exceeds the timing requirements.
-Zero Slack: Indicates that the signal arrives exactly on time, meeting the timing requirements without any margin.
-Negative Slack: Indicates that the signal arrives later than required, meaning the design does not meet the timing requirements and there is a timing violation.
+Slack in Timing Analysis:
+
+  Slack: Slack is the difference between the required arrival time and the actual arrival time of a signal at a particular point in a digital circuit.
+  
+  Positive Slack: Indicates that the signal arrives earlier than required, meaning the design meets or exceeds the timing requirements.
+  
+  Zero Slack: Indicates that the signal arrives exactly on time, meeting the timing requirements without any margin.
+  
+  Negative Slack: Indicates that the signal arrives later than required, meaning the design does not meet the timing requirements and there is a timing violation.
+  
 
 Timing Analysis:
 
