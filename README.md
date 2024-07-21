@@ -26,12 +26,7 @@ endmodule
 
 test.tcl    :
 
-read_liberty toy.lib
-read_verilog top.v
-link_design top
-read_sdc top.sdc
-report_checks -path_delay max -format full
-report_checks -path_delay min -format full
+![image](https://github.com/user-attachments/assets/c68fcf42-a183-428b-9cbc-8e798475a981)
 
 
 Slack in Timing Analysis
@@ -48,7 +43,7 @@ Timing Analysis:
 ![image](https://github.com/user-attachments/assets/5046d604-80e2-4347-9d4c-4844951c5a8c)
 
 Conclusion: Positive Slack in all cases.
-            The above results indicate that all timing constraints defined in the current design are satisfied, and there is no timing violation.
+            The above results indicate that all timing constraints specified in the current design are satisfied, and there is no timing violation.
 
                                                                         Thank You!
 
