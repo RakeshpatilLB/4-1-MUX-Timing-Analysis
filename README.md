@@ -41,6 +41,9 @@ Zero Slack: Indicates that the signal arrives exactly on time, meeting the timin
 Negative Slack: Indicates that the signal arrives later than required, meaning the design does not meet the timing requirements and there is a timing violation.
 
 Timing Analysis:
+
+
+
 ![image](https://github.com/user-attachments/assets/32290fd6-6c7e-44fc-a906-11254eb4c8b7)
 ![image](https://github.com/user-attachments/assets/5046d604-80e2-4347-9d4c-4844951c5a8c)
 
